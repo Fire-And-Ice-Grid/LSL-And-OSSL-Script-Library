@@ -1,0 +1,16 @@
+ 
+Large Numbers Of Items In A Rez Box
+---------------------------------------------
+Making rez box's which contain several hundred items is discouraged. 
+
+The open sim defaults will make a script stop after it has been running a job for more than 30s. How many items you can rez in this time depends on the performance of the server your Open Sim instance and Robust servers are on. The default script queue is only 300. So again if you are running on an instance where nothing else is happening you would have to rez 1000's of items before this failed. 
+
+If your on an instance with several regions and a lot of other script activity it is possible you could hit script queue issues.  Because of the huge variation in settings and performance of Open Sim servers it is impossible to say how many items you can safely put into a rez box. I suggested based on my testing that you limit it to less than 200 items on most grids. 
+
+Finally the default number of write or readable lines in a notecard is less than 300. So again using sets bigger than 200 on most grids is not recommended. If you know your grid can cope with more, so will the rez box.
+
+However when I increased my time from 30 to 300 and the script queue up to 2000 I successfully re-zed tens of thousands of items in one go. 
+
+One work around for this limitation is using coalesced objects as the script sees them as just one item. For more information on this please read 
+How To - Using coalesced objects
+

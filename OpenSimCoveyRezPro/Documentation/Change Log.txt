@@ -1,0 +1,158 @@
+ 
+Covey Rez Box Pro Change Log
+=====================
+Future Versions / To Add /  Fix
+---------------
+rotation of box arrow to items calculation
+No known issues currently
+
+V4
+==
+Added nested rez system example
+Added rez sets example
+Major Documentation Update
+Added Duplicate script protection to Control and Rezzer Scripts. 
+Fixed regression - recording on and off now changes the menu status on items again , 
+Added ability to turn the dialogue menu off from the A.P.I.
+Add force update button to control script
+added force position update to rez script after rezzing is complete
+added timer to the items script to check the items positions 10s after the first move attempt. 
+fixed position checking regression following adding of timers
+changed get rezzing object method to osGetRezzingObject as the pure lsl is not available in OS 0.8*
+added time out of 30 mins in relative mode with no activity. Reverts to absolute after this. 
+removed items rezzed check from re-record to allow re-recording of individual items and sets. 
+
+3.993
+====
+Separated inbound and outbound coms channels for Rez Box's and Items to allow nested rez box's. 
+
+3.991 & 3.992
+==========
+Temporary saving versions only while making changes. No record of changes during this time. 
+
+3.99
+===
+Added copy permissions checks to the items script. Script will now send a warning and self remove it is dropped into a no-copy item. 
+Added notification if duplicate scripts are removed. 
+Added menu recall for ReTexture
+
+3.98 
+===
+1. Cleaned up more variables to use camel case... ooops missed a few. 
+2. Added listen channel for regionsay api and listen controls
+3. Added bools for region and linked message apis to being on or off
+4. Adjusted Desc saving/retrieval to account for the new api bools 
+5. Moved Api processing to its own method
+6. Changed api to use comma separated values Instruction, Data
+7. Added setup api listener method. Added it to startup 
+8. added method to turn region say api on and off ApiRegionSay(string instruction)
+9. added method to turn linked message api on and off ApiLinkedMessage(string instruction)
+10. added menu to turn apis on and off
+11. added display box number to menu
+12. added api status to the hover text display
+13. added api for inbound/outbound rez box pos
+14. added api for inbound/outbound rez box rotation
+15. added move and rotate methods
+16. added validity checking for supplied positions and rotations. 
+17. added ability to set rez box position and rotation by api
+18. added ability to set box phantom and invisible by api
+19. added if chatFeedback controls to items script
+20. Many script layout improvements for readability
+21. Multiple methods combined to help with consistency
+22. Many messages between box, items etc made consistent across all scripts
+23. added set box position to the menu
+24 added set box rotation to the menu
+25 added set alpha on/off to menu
+26 added set phantom on/off to the menu
+27 combined items scripts and added option to the menu and the api 
+28. added item pickup mode info to the api documentation
+29. added check to avioid re-recording too many items at once
+30. added ability to rez underground into settings. 
+31. added detection and restoration of prims phantom status (working around some os bug sometimes making stuff act phantom even when its not)
+32. added the ability to move items from one rez box to another. 
+33. added rez list creation and rez/de-rez
+34. added prep box textures 
+35 added test recorded mode in manual pickup mode
+36 Record On now enables the coms channel listener. 
+37. Manual pickup set to the default. 
+38. Updated hover text display to seperate contents and settings as the display was running out of memory as one function. 
+39. Adden confirmation when a rez set is created
+40. Fixed 3 api controls and added rez/de/rez set which was previously missing
+ 
+3.7
+==
+Added warning if recording is not enabled due to the box position after auto fix denied
+Added chat feed back giving the user the previous rotation of the box if its auto fixed for recording. 
+cleaned up all scriptp so all variables are in camel case and all methods are in pascal case
+added box rotation check when original recording is requested. 
+
+3.6
+==
+Bug Fix: Turning on recording now also turns on required listeners. Turning off recording before stopped the items listener and it wasn't turned back on. 
+Checks made on rez box rotation when recording is enabled, if box is not at <0,0,0> a warning is sent and an option to automatically fix this offered. 
+Added set position when ever position request is made by an item to allow more flexible recording on the fly. 
+
+3.5
+==
+Removed hover text on message in local chat to avoid chat spam if hover text is on and lots of objects are added to the rez box
+
+3.4
+==
+Minor tweak to the script so the menu gets sent after an action if the last action was requested from the menu. But doesn't if the last action came from the api. 
+
+3.3
+==
+Features
+-----------
+Added ability to turn chat feed back on and off
+Added ability to show rez box info in hover text
+add api commands and feedback for hovertext
+add api commands and feedback for chat feedback options
+
+Various efficiency improvements to the control script:
+-----------------------------------------------------------------
+RegionSay messages to items now go through the same method for consistency 
+RegionSayTo messages to items now go through the same method for consistency
+Some global variables removed and added to method parameters or local variables 
+All listeners turned off unless strictly needed (except the menu listener).
+All set object descriptions calls done through one method for consistency
+Checks to make sure items exist when rezzing attempted added
+Massive improvement in dynamic menu memory usage
+
+Various efficiency improvements to the items script:
+----------------------------------------------------------------
+changed the name of the settings note card to begin with a dot. So it shows at the top of the inventory.
+Many global variables removed and added to method parameters or local variables 
+notecard reading changed from data server to ossl 
+
+3.2
+==
+Changes to items and box control script.
+Unless box recording is enabled the menu to update the item position on the items is now disabled.
+Clicking it without recording being enabled would do nothing anyway and this improves performance by turning off a listener.  
+Additionally it prevents the update position menu interfering with normal operation of rezed items which respond to mouse clicks. 
+updated the heard message in box to box communications to match the changes above
+
+3.0
+==
+Major Update;
+Added ability to rez and de-rez items individually
+
+2.16
+===
+Item Auto Pick-up - changed detach event to use llDetachFromAvatar() to avoid ossl usage per mission
+ 
+2.15
+===
+Item Scripts - swapped the remove notecard and remove scripts around so the notecard actually gets deleted when finalising. 
+Control Script - any recording box's turn off when recording is turned on in another box.
+Rez Script - added api message when rezzing is complete
+
+
+2.14
+====
+Control Script:  Add check to stop duplicate rezes
+Item Scripts:    changed movement method. 
+                    Below 4096m it uses llSetRegionPos() then LlSetLinkPrimitiveParamsFast()
+                    Above 4096 it uses LlSetLinkPrimitiveParamsFast() in a loop untill its within 10m of the destination then applies one last LlSetLinkPrimitiveParamsFast()
+Item Scripts: added script reset protection

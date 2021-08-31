@@ -1,0 +1,17 @@
+How To - Using coalesced objects
+=======================
+
+Coalesced (grouped) objects are a bit like linked objects in that you have many items all packed into one object in your inventory.  They are not however linked objects and after rezzing will act like any other unlinked item on the SIM. You can combine many linked items into one Coalesced object When rezzed they will return to the original linked objects you grouped together. 
+
+Coalesced objects can be very useful in rezzing systems. Because your combining many items into one, the rezzing script has less work to do. The script has at least one job per object it rezzes from its contents. So if your combining 10, 20, 100, 250 objects into 1 it puts less load on the script. This is also a nice way to avoid script event time outs. 
+
+Creating coalesced objects if relatively easy.  Edit one of the objects you wish to add, then left click and drag a box which surrounds all the items you wish to group. Let go of the left button then right click over any of the highlighted items and select Take. 
+
+There are a few problems with this method though. Doing this prevents you from accessing individual items within each coalesced object from the Rez system, The coalesced object is one item as far as the script is concerned. That same drawback can be used as another way of making rez-sets though. 
+
+The second drawback is that you get everything dumped out at once, it can make an unsightly mess while everything moves into place. This would be an especially important consideration if you were rezzing items in the middle of an active sim.
+
+Coalesced objects should be kept to less than 250 items per coalesced object. If you go over this number in theory they will be split into multiple parts. In practice, especially when the items your grouping are spread out over a wide area i have seen this cause sim crashes. Since there is no benefit to trying, keep them to less than 250 as you make them.  
+
+Finally DO NOT USE coalesced objects in conjunction with Underground movement EVER! There is a high likelihood you will crash the sim/your viewer or both. There is a bug present in the Open Sim software which causes items used this way to turn physical. It even over rides the simulators maximum physical prim settings. Again DO NOT combine COALESCED objects with UNDERGROUND movement. 
+ 

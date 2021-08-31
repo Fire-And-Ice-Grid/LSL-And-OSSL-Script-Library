@@ -1,0 +1,8 @@
+Safety Features - Double Rez Prevention
+===========================
+
+Only applies when using "Rez All", it does not apply to rezzing of Sets or Single items. 
+
+If you attempt to rez items while already having items rezzed the system will refuse to rez again. This prevents multiple copies of the same item occupying the same space. 
+
+If you somehow end up in a situation where nothing is rezzed but the system thinks there is (such as you manually deleting items, or you removing them all through Sets) simply use the de-rez all button and then rez again. 

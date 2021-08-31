@@ -1,0 +1,14 @@
+How To Use: Getting And Unpacking
+========================
+Video Tutorial: https://youtu.be/aSDo34RpCV4
+
+To get your copy of the Rez Pro System please visit the Covey Store on the Neverworld Grid using one of following methods. 
+
+HG Map: http://hg.neverworldgrid.com:8002/Covey
+HG TP:  secondlife://http://hg.neverworldgrid.com:8002/Covey/135/130/24
+
+Once there you should see a large vendor in one of the units surrounding the central landing point. 
+
+You have two options for getting the system, you can either click "Donate" and make a donation or you can click "Free" and the item will be delivered to you for free. 
+
+Please note, paying the vendor 0 will not work. As with all scripted vendors payments of 0 are not picked up. Its why all scripted vendors giving freebie either have you pay 1 and refund it or have a separate free button. 

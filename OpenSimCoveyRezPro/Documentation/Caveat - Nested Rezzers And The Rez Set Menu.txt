@@ -1,0 +1,4 @@
+Caveat - Nested Rezzers And The Rez Set Menu
+================================
+
+If you use the nested Rezzer method then the menu entries shown for Rez Sets will be erroneous. They will incorrectly show the settings notecard giving the position and rotation data. This is unavoidable without massively increasing the memory requirements for the dynamic menu. You just need to be aware of it. Any real rez sets you include will still work from the menu, just ignore the erroneous entries. 

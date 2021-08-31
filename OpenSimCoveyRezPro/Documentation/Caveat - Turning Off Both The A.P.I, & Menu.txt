@@ -1,0 +1,4 @@
+Caveat - Turning Off Both The A.P.I, & Menu
+============================
+
+Be careful with turning everything off. It is possible using the A.P.I. to turn off the Link Messages, llRegionSay messages and the on click menu. If you do this, you will lock yourself out. The only fix for this will be to copy the items from the Covey Rez system to your inventory then make a new Rez system and drop them in there. If you have made other scripts to work with the A.P.I, they will then need new box numbers.  

@@ -1,0 +1,8 @@
+Safety Features - Update menu disabled unless recording is on
+===========================================
+
+When you are initially recording items, clicking on any item will give a menu with an update button. Pressing it allows you to adjust the recorded position of the item ready to be picked up. As soon as recording is turned off, this menu is disabled. This prevents the menu from inter fearing with other menus which may exist in that item.
+
+If you at a later date enable recording again for the rez set then the menu will once more function. 
+
+ 

@@ -1,0 +1,38 @@
+ 
+How To use  - Rezzing And Removing Sets / Individual Items
+========================================
+
+This notecard assumes you have read "How To Use - Making Rez Sets (Advanced Packing)" And that you have a Rez system with multiple rez sets inside it. 
+
+Rezzing Sets
+=========
+You can rez sets in two ways. Either by selecting then from the menu, or by typing in the name of the set. The recommended method is to choose Set Lists. That way all sets in the Rez System will be displayed on a menu. Then you can just click on the item in question. However if you prefer you can enter the name of a Rez Set or individual item to rez or de-rez. 
+
+At any time you can rez an additional set, remove a set from all items. The same applies to individual items.  
+
+To rez or De-Rez a set from the menu choose:
+--------------------------------------------------------
+Rez Set By Menu = MainMenu/RezDeRez/RezSets/RezSetList    Then click on the name of the rez set from the menu
+DeRezSet By Menu = MainMenu/RezDeRez/RezSets/RemSetList  Then click on the set to deRez from the menu
+
+
+To Rez or DeRez A Set By Name:
+---------------------------------------
+Rez Set By Menu = MainMenu/RezDeRez/RezSets/RezSetName   Type in the name of the rez set (case sensitive and space sensitive)
+De-Rez Rez Set By Menu = MainMenu/RezDeRez/RezSets/RemSetName   Type in the name of the rez set (case sensitive and space sensitive)
+
+
+Rezzing Individual Items
+=================
+You can rez or de-rez individual items 2 ways: As above using either a menu or by typing the name of the item/set into a pop up text box. 
+Rez/DeRez Item By Menu
+------------------------------
+Rez Item By Menu = MainMenu/RezDeRez/SingleItems/RezItemList   Chose item name from the menu 
+De-Rez item by Menu = MainMenu/RezDeRez/SingleItems/RemItemList   Choose the item name from the menu
+
+Rez/Derez Item by Name
+-------------------------------
+Rez Item By Name = MainMenu/RezDeRez/SingleItems/RezName      Type in the name of the item (case sensitive and space sensitive)
+DeRez Item By Name = MainMenu/RezDeRez/SingleItems/RemName    Type in the name of the item (case sensitive and space sensitive)
+
+

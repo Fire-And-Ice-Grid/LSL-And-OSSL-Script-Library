@@ -1,0 +1,22 @@
+ 
+Relative Vs Absolute Positioning. 
+=====================
+
+Core Difference:
+
+Relative Mode:  Rezzed items will move and rotate with the Rez System if you move or rotate it. . 
+
+Absolute Mode: Items will return to their original place and rotation on the sim. 
+
+Both modes have their own uses. If you are wishing to positions items such as houses on a sim then Relative is the mode to use.  The issue with relative mode is that while items are rezzed the Covey Rez System (like all rez box systems) runs a timer to check if the rezzer has moved. This means there is a constant drain on the sims resources. 
+
+To combat this the timer is turned off any time you de-rez items even in relative mode. You can also after rezzing set the mode to absolute to remove the timer and then back to relative mode if you wish to move the items around again later. 
+
+If you plan to use items in the same position on your sim such as rezzing vehicles on a dock you should use Absolute positioning. With absolute mode the rez system can be anywhere on the sim, totally out of sight and the items will always rez in their original positions. 
+
+Absolute mode is also useful if your trying to move new features from one sim to a backup sim and wish them to be returned to exactly the same positions. 
+
+The Covey Rez Pro system comes with the ability to easily change a rez box from relative positioning to absolute. So you can position your items using relative positioning then re-record and have the system use this new position for absolute mode. There will be more detail on this process in a separate notecard. 
+
+Summery: If items are going to be rezzed on a regular basis and users are going to interact with the rezzed items Absolute positioning should be used whenever possible.  If your purpose is to layout items on a SIM then relative is the choice. Typically you would finalise a build in this case or then re-record to use absolute positioning. Of course there could be exceptions to this. 
+

@@ -1,0 +1,31 @@
+ 
+How To use  - Re-Recording Items
+======================
+
+You wish to alter your build after it was initially recorded but do not wish to go to the effort of dropping scripts one by one to make a new rez system
+
+Change the position of your rez system in relation to the items it rezzes. Full instructions on doing this in another notecard. 
+
+Change the Absolute position of the items after placing them correctly using relative positioning. 
+
+In preparation for combining smaller builds into a much bigger one. 
+
+The process is the same for all situations. 
+
+Rez the items and go to the PosRecMenu 
+
+If you are recording massive builds (more than 1k objects)  click PrepReRecrd  instead of Re-Record All in the next step. 
+
+Click on Re-RecAll.
+
+The system will then ask you if you want to automatically delete the items from your rez system. Usually you can say yes to this safely. HOWEVER if you have only rezzed some but not all items in the Rez system do not select this as it will remove all objects from the contents of the rez system.
+
+If you don't automatically delete the items from the rez system contents you will need to do this manually. 
+
+Re-recording is always forced into Manual pick-up mode to avoid issues when lots of items try and attach to your avatar at the same time.   
+
+If this is a massive build and you used PreReRecrd you will need to box select all items afterwards then reset the scripts through the viewer. 
+
+The above levels for re-recording or prep-recording apply to Open Simulator grids using the default open sim settings. If your grid uses settings allowing for more script events in the queue then you may well be able to use a greater number of items without the box select. 
+
+

@@ -1,0 +1,25 @@
+Changing The Position of the Rez System in relation to the Items Rezzed. 
+================================================
+
+If your build is only ever going to be restored in Absolute mode there is no need to do this. 
+
+Hypothetical Situation:
+--------------------------
+You have packed a build. When you started the position of the rezzing object seemed sensible. But now it seems odd, it's off to one side or whatever else. 
+
+This can be fixed without creating a whole new system and recording from scratch. 
+
+1. Go to the PosRecMenu
+2. Click on AllowRePos
+3. Move the rezzing object into its new position.
+4. Click SetRecPos
+4. Click ReRecAll
+
+Allow the system to automatically remove the items from the box or do it yourself manually. 
+Once all the recorded notifications in chat have stopped pick up your items then put the new one into the rez systems contents. 
+
+For those of you with a technical mind. What this actually does is set the positioning to Absolute, which in turn stops the timer giving position updates to the items. Clicking SetRecPos sets the new starting position the items use to calculate their position in relation to the Rez systems position. Recording all items forces the items to run that calculation again. So from the scripts point of view its almost identical to a fresh system. It just saves you the user time. 
+
+
+
+ 

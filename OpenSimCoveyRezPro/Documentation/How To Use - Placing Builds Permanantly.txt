@@ -1,0 +1,7 @@
+How To Use - Placing Builds Permanently
+
+===========================
+
+The Covey Rez Pro system will do far more than act as a normal rez box. However it will still do exactly that. If you wish to leave something out permanently all you need to do is "Finalise" the items. 
+
+Simply rez your items, move and rotate the rez box until its in a situation your happy with. Then on the main menu click the "Finalise" button. This will remove all Covey Rez Pro scripts and settings cards from the items.

@@ -1,0 +1,60 @@
+ 
+How To Use - Making Rez Sets (Advanced Packing)
+=================================
+
+Rez sets allow you to have multiple groups of item in your rez box which you can rez and de-rez independently of each other. For example you might have multiple different sets of furniture for a room. A later note card will cover using them, this one just covers creating the sets. 
+
+The easiest way to see rez sets working is by using coloured boxes so for these instructions we are going to create the items from scratch as well. 
+
+1. Build a box which will become your rez system
+
+2. Edit the box and give it a name
+
+3.. Drop in Scripts : 
+Covey Rez Box Control - OS - V****
+Covey Rez Box Rezzer - OS - V****
+
+4. (Optional, but recommended step). Click on Main Menu, Then ReTexture. This will make the rez system clear among the other objects your about to make. 
+
+5. a. Build another box to one side of the rez system.  (you can drag items from your inventory but follow the guide makes it clear)
+5. b. Edit the new box, Call it "Red Item" 
+5. c. With the edit window still open to go the textures tab and change the colour to red.   
+5. d. Now Duplicate it by slide copying a few times. 
+5. d.i With the edit window still open, hold down the shift key. Then left click and hold with your mouse over the directional arrows showing on your edited object. 
+5.d.ii Repeat the last step a couple more times. 
+
+6. Choose a different space around the rez system. Then follow all parts of step 5 again, choosing a different name and a different colour. I suggest green, but that is up to you. 
+
+7. Repeat step 6 this time choosing blue (or any other colour, but since this is a 3d world red, green, blue is fitting. 
+
+8. Make more sets of items if you wish, you can have as many as you like. 
+
+9. Unless you can't use it. On the menu go to RezMode / Auto Pickup
+
+10. 7. Drop items script into each item of one particular set.  For this example drop the script below into each of the red boxes you have made. 
+Covey Rez Box Items - OS -  V****
+
+10. a. (Only if you used manual pick up) - Each of the red items should have now given you a message saying positions recorded. Pick each of the red items up and take to your inventory. 
+
+11. Copy the Red items from your inventory into the contents of the rez system. 
+
+12. Delete the items in your inventory so you don't get confused about which is which later. 
+
+13.  On the menu go to Rez/DeRez, then RezSets, then MakeRezSet.
+
+14. Put a name into the pop-up box. I suggest "RedItems"
+
+14. Make a folder in your inventory called "RedItems"
+
+15. Edit your rez system, go to the contents tab and copy all the red items as well as the new notecard "RedItems" (or the name you gave it if you chose your own) from the Rez systems contents into the folder you just made in your inventory. 
+
+16. Go back to the contents of your Rez System, delete the items and the notecard, leaving just the scripts behind. 
+
+17. Repeat steps 10 to 16 for each of the sets you are making. So if you followed my suggestion do all the Green items. Once you finish the green items go back and repeat again for the blue items. Of course use appropriately named folders in your inventory each time to avoid confusion. 
+
+18. When you have finished making all your sets. Drag the contents of each folder set in your inventory into the contents of the Rez System 
+
+You should now have all the Red, Green and Blue items in your rez system. You should also have the related note cards for each set and of course the Rez System scripts. 
+
+Pick-up the rez system and take it to your inventory for later use. Another guide will show you how to use the sets. 
+

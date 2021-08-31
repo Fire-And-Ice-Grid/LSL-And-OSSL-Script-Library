@@ -1,0 +1,20 @@
+How To use  - Underground Movement
+==========================
+
+USE THIS FEATURE WITH EXTREME CAUTION!!
+
+WITH SOME Open Sim SETTINGS THIS COULD CORRUPT YOUR REGION
+
+DO NOT USE THIS UNLESS YOU HAVE AN OAR YOU CAN RESTORE AFTERWARDS!
+
+CAN ONLY WORK WITH UNDERGROUND MOVEMENT ALLOWED ON THE GRID REGARDLESS
+
+With the warning out of the way....
+
+In the RezMode menu you will find an option to turn Underground movement on. This will allow items originally recorded with underground positions in Absolute mode to be returned to their original positions. This will also allow items to be pushed underground if your using Relative positioning. 
+
+By default underground movement is disabled.  In addition no items positioned underground will auto pick-up, they will be forced into manual pick-up mode with a warning given at the time. 
+ 
+ This feature can be very useful for restoring full sim builds to their original positions, but please please heed the caution. Take an OAR before you pack. Then test the Rezzing of objects. With some Open Sim settings i have seen objects being forced to physical objects on mass. I have seen terrain corruption and the inability to teleport into regions afterwards. Simply resetting the regions after this does not fix them. Restoring an OAR has in most cases. In some extreme cases the a new region UUID had to be set and the OAR restored to that. Please do not ignore these warnings. 
+
+ 

@@ -1,0 +1,10 @@
+Safety Features - User Input Validation
+==========================
+
+Every time information is directly entered by a user such as a rotation, position vector or anything else full validation is carried out to ensure that the value entered is plausible. 
+
+If it asks you for a vector and you do not provide a vector then it will give you a warning and ask you to try again. The same principle applies to all types of data you may enter via the menu or via the A.P.I. 
+
+This is one reason its not a good idea to turn chat feedback off until you have satisfied yourself that your system is working without any glitches. If chat feedback is turned off the system will silently fail. 
+
+There are many additional checks made to ensure names entered exist. Every effort has been made to make it extremely hard to end up with script errors due to user input errors. This includes checks to make sure there are items in the rez system when you try to rez before the script actually tries to rez items.  

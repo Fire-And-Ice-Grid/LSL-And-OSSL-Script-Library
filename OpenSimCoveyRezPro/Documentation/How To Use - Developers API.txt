@@ -1,0 +1,102 @@
+How To Use - Developers A.P.I.
+====================
+There are two methods of using the API - llRegionSay or llMessageLinked
+
+Inbound API:
+---------------
+link_message:  mum = rezBoxSetNumber
+llRegionSay: channel = rezBoxSetNumber
+When communication is inbound the instruction is telling the API which method to call and the data is giving the method specific information it needs
+
+ProcessApiMessage(string message)
+{   //process the api message and acts on the instruction
+    // string arrives in the format "instruction,data"
+    list instructions = llCSV2List(message);
+    string instruction = llList2String(instructions,0);
+    string data = llList2String(instructions,1);
+}
+
+Outbound API
+----------------
+llMessageLinked: num = -1* rezBoxSetNumber
+llRegionSay: channel = -1*rezBoxSetNumber
+When communication is outbound the "instruction" is telling API which method was just used and "data" what specific instructions the method used. 
+Outbound linked messages are sent to all prims except the one the main rez box scripts are in. 
+
+MessageFeedback(string instruction, string data)
+{
+    string toSend = instruction + "," + data;
+    if (apiLinkedMessage) llMessageLinked( LINK_SET, !rezBoxSetNo, toSend, "" );
+    if (apiRegionSay) llRegionSay(!rezBoxSetNo, toSend);
+    if (chatFeedback) llOwnerSay(instruction + ": " + data);
+}
+
+Api General
+---------------
+If the Rez Box Set Number (rezBoxSetNumber) is -987654321 then  the outbound channel number is 987654321. 
+The rez box set number can be found by using the menu or looking at the first number in the object description of the rez box. 
+
+Everything you can do through the main menu can be done via the api as well as a few extras which can not be done via the menu. 
+
+Both API methods can be enabled and disabled individually. They can also be turned off via the API commands. So take care, as if your not careful you can turn the API off via the API. That would mean you had to turn it back on via the menu. 
+
+All inbound and outbound messages through the API follow the same format. One string which is a comma separated value. The first half is the instruction and the second part is the data.  eg. "instruction,data". The code snippet below is how the script will process the string you send. 
+
+Instructions with no data variable
+----------------------------------------
+instruction: RezItems:                          Inbound: All items will be rezzed.                                 Outbound: All items have been rezzed.
+instruction: DeRezItems:                      Inbound: All items will be de-rezzed                            Outbound: All items have been de-rezzed
+instruction: FinaliseItems:                     Inbound: All Items will be finalised                                 Outbound: All items have been finalised
+instruction: BoxRePos:                         Inbound: Allows Box repositioning                               Outbound: Box Repositioning has been allowed.
+instruction: SetBoxPos:                        Inbound: Set Current Pos for recording                       Outbound: current positions set for recording
+instruction: ReRecordAllItems:              Inbound: Re-Records all items                                     Outbound: All items have been re-recorded
+instruction: DisplayBoxNumber:           Inbound: reports the rez box number                         Outbound: tells you the rez box number
+instruction: AllowBoxReposition           Inbound: Prepares the box for position reset              Outbound: box made ready for position reset
+instruction: PrepItemBoxExchange       Inbound: Removes Extras card from rezed items        Outbound: Extras card removed from rezzed items
+instruction: PrepReRecord                   Inbound: Tells rez items to do a prep re-record           Outbound: Rezzed items prepared for re-recording
+
+
+Instructions with a data variable. 
+---------------------------------------    
+instruction: PositioningMode:                      data: Absolute                 Inbound: Set Absolute Positioning                     Outbound: Absolute Positioning set. 
+instruction: PositioningMode:                      data: Relative                   Inbound: Set Relative positioning                      Outbound: Relative positioning set  
+instruction: Recording:                               data: On                          Inbound: Turns recording on                             Outbound: Recording has been turned on
+instruction: Recording:                               data: Off                         Inbound: Turns recording off                             Outbound: Recording has been turned off
+instruction: HoverTextInfo:                         data: Settings                 Inbound: Displays Settings in hover text            Outbound: Hover text Settings display turned on
+instruction: HoverTextInfo:                         data: Contents                Inbound: Displays Contents in hover text            Outbound: Hover text Contents display turned on
+instruction: HoverTextInfo:                         data: Off                         Inbound: Turns hover text off                             Outbound: Hover text turned off
+instruction: ChatFeedback:                         data: On                          Inbound: Turns chat feedback on                      Outbound: chat feedback turned on
+instruction: ChatFeedback:                         data: Off                          Inbound: Turns chat feedback off                      Outbound: chat feedback turned off
+instruction: ApiRegionSay:                          data: On                          Inbound: Turns on the listener for the api          Outbound: listener for the api turned on
+instruction: ApiRegionSay:                          data: Off                         Inbound: Turns off the listener for the api           Outbound: listener for the api turned off 
+instruction: ApiLinkedMessage:                  data: On                         Inbound: Turns on the linked messages api        Outbound: linked message api turned on
+instruction: ApiLinkedMessage:                  data: Off                         Inbound: Turns off the linked messages api       Outbound: linked message api turned off
+instruction: RezBoxAlpha:                           data: On                         Inbound: Makes the rez box invisible                 Outbound: Rez box set invisible
+instruction: RezBoxAlpha:                           data: Off                         Inbound: Makes the rez box visible                   Outbound: Rez box set visible
+instruction: RexBoxPhantom:                       data: On                          Inbound: Sets the rez box phantom                  Outbound: Rez box set to phantom
+instruction: RexBoxPhantom:                       data: Off                          Inbound: Sets the rez box solid                        Outbound: Rez box set to solid
+instruction: UnderGroundMovement           data: On                           Inbound: Turns Underground Movement  On     Outbound: Underground movement turned on
+instruction: UnderGroundMovement           data: Off                           Inbound: Turns Underground Movement  Off     Outbound: Underground movement turned off
+instruction: ItemPickup                               data: Auto                        Inbound: Turns on Auto Pick up Mode                 Outbound: Auto pick up mode turned on
+instruction: ItemPickup                               data: Manual                    Inbound: Turns on Manual Pick up Mode              Outbound: Manual pick up mode turned on
+instruction: MakeRezSet                             data: "Name"                   Inbound: Makes a set with given name             Outbound: Rez Set with "name" created 
+instruction: DialogMenuStatus                    data: On                         Inbound: Turns the dialogue menu on                  Outbound: Dialogue menu turned on
+instruction: DialogMenuStatus                    data: Off                         Inbound Turns the dialogue menu off                  Outbound: Dialogue menu turned off
+instruction: RezSingleItem:                         data: "item name"           Inbound: Rezzes the named item                      
+instruction: DeRezIndividualItem:                data: "item name"          Inbound: De-Rezzes the named item                  
+instruction: RezRezSet                                data: "item name"         Inbound: Rez the named set                               
+instruction: DeRezRezSet                           data: "item name"          Inbound: DeRes the named set
+
+instruction: RezBoxPos:                              data: "vector"               Inbound: Sets the position of the rez box           Outbound: Rez box position has been set 
+instruction: RezBoxRot                               data: "rotation"              Inbound: Sets the rez box rotation to data          Outbound: rez box rotation set to data
+NB. Rotation: rotations are Euler Vectors in Degrees in both directions. (like you see them in the viewer)
+
+Outbound Only
+------------------
+instruction: DelInventoryObjects:  Inventory objects have been deleted
+instruction: RelativeModeTimeOut: 30 mins have elapsed since the items were rezzed or moved. Absolute mode has been set to save sim resources
+
+Channel -234576914 (RezBoxChannel)  Instruction BoxNumber: "  (string)rezBoxSetNo ) - happens when show box number is clicked on the menu
+
+
+ 

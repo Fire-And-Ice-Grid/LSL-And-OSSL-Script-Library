@@ -1,0 +1,44 @@
+ 
+How To Use - Creating a Rez System - Packing Items
+===================================
+Video Tutorial: https://youtu.be/L69z25Byvjk
+
+The Covey Rez Pro system is far more than a basic rez box system. This tutorial is only focusing on the basics of creating a rez system by packing items into a rez box. In the demonstration i make everything fresh. However it should be pointed out that your rez system container doesn't need to be a box, it could be any item from your inventory (assuming you have copy permissions on it.). The same is true of the items packaged. 
+
+Foreword. 
+If you are packing items you rez from your inventory rather than new items it is a good idea to relog before starting so your recent items are clear. 
+
+1. Start by building a fresh box. 
+
+2. Give the box a sensible name you will recognise. eg Covey Rez Pro Demo Rezzer.
+
+3. Copy the following scripts into the new Rez systems contents(inventory in some viewers):  "Covey Rez Pro V* - Control" and "Covey Rez Pro V* - Rezzer"  
+
+Optional Step:
+3.a, Click on main menu, and then "ReTexture" to add a direction arrow, shape and texture sensibly, 
+
+4. Build another box and give it a sensible name. eg. "Test Item".  or just drag one from your inventory.
+
+5. Duplicate the item a few times. 
+
+Optional Step:
+5.a. Edit the rez system, select the texture tab. Then put a check mark in "Select Face" and click on the arrow on the top of the rez system. Finally adjust the "Rotation Degrees" so the arrow points the middle of the items you just made.
+
+At this point we need to consider whether to use auto or manual pick-up. If your SIM lets you use osForceAttach you should choose auto pickup in most cases. Both auto and manual pick-up modes are found in the "RezMode" menu. If you are unsure try auto. The worst that can happen is you get a load of script errors and have to try again. Auto pick-up will force attach the item to your avatar and then drop it directly into your inventory.
+
+6. Click on the "RezMode" menu, then select either "AutoPickup" or "ManPickup".
+
+7. Drag and drop the "Covey Rez Pro V* - Items" script onto each of the items you wish to pack.
+
+If you are using Auto Pick-up they will go strait to your inventory. (New items will be found in your objects folder, items you rezzed from your inventory will return to the folder you rezzed them from and can be found using the recent items tab of your inventory).
+
+7.a. If you are using Manual Pick-up you should have a message from each item telling you that you can now pick it up. Don't worry about dropping a script twice as a duplicate will automatically be removed.  If your unsure which items you put scripts into simply go to the "RezMode" menu and then select "TestRecOn". Items you have recorded will be pushed 500m into the air. Repeat dropping and testing until you have all items recorded. When you do either fly/cam up and pick them up in the sky or click "TestRecOff" to bring them back to their original position. 
+
+7.b. Right click and take each item. It will then go to your inventory. 
+
+8. Drag the items you just took to your inventory from there into the contents/inventory of your rez box. 
+
+Your done!. If you wish to test it go to the "Rez/DeRez" menu then click "RezAll" and "DeRezAll." I will go into Rezzing and using the items in more detail in another tutorial. 
+
+
+

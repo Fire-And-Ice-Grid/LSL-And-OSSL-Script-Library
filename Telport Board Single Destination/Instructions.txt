@@ -1,0 +1,10 @@
+When a user clicks the prim they will get a menu offering to tp them or give information about the place. The information option will deliver all prim contents other than the script and the location note card. It will work inside the same sim, going to another sim or even another hypergrid destination
+
+This script is written in OLSL and will not compile in second life but works in Opensim under both the X and Y Engine.
+
+
+Create a prim in world
+Add a new script to the prim
+Copy-paste the licence and script
+Make a new notecard called Location and add it to the prims contents
+Adjust the notecard to your requirements 

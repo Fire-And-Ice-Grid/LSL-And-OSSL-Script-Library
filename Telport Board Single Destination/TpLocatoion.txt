@@ -1,0 +1,34 @@
+#Fire And Ice Teleport Board - Single Location
+#==============================
+
+#Will work on the same sim / to another sim on the same grid or a location on another grid. 
+#All locations needs a landing point and looking at
+
+#Teleport In the same region:
+#----------------------------------
+# Leave the region name and the grid uri empty
+
+#Teleport To Another Region On The Same Grid
+#--------------------------------------------------------
+#Fill in the region name but not the Grid Uri, 
+
+#Teleport To Another Region On A Different Grid
+#--------------------------------------------------------
+#Fill in the region name and the grid uri
+
+#Options Description 
+#--------------------------
+#Blank Lines and lines starting with # are ignored
+#Landing: point is a vector <x,y,z> which represents the landing point on the destination region. 
+#LookAt :is the direction the avatar will face when they land (assuming its ever fixed)
+#GridUri: is the URI for the destination grid. Example: http://fireandicegrid.net:8002
+#Region: is the name of the destination region. Example: Covey Stores
+#Image: this is the UUID/Key of the image you wish to display. 
+#Name: a descriptive name used to tell people where they are being teleported to, the board will also rename its self using this. 
+
+Landing =  <128,128,128>
+LookAt =  <0,0,0>
+GridUri = 
+Region = 
+Image = 
+Name =  

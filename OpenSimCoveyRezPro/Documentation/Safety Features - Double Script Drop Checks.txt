@@ -1,6 +1,0 @@
-Safety Features - Double Script Drop Checks
-==============================
-
-All the Covey Rez Pro scripts check for existing versions of themselves when you put them into an object. If you add two item scripts one will be removed and a notification given to the you.
-
-The same is true for all three scripts. It is impossible to end up with two copies of any of the scripts. 

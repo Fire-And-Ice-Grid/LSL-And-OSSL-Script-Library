@@ -1,7 +1,0 @@
-How To Use - BoxPos & BoxRot Buttons
-=============================
-These two buttons can be found in the PosRecMenu.
-
-The function is pretty obvious, one will move the box to a position you specify, the other will set the box to a rotation you specify. 
-
-It is unlikely you will ever use these from the menu. The function is here mainly for use via the api. It allows the rezzing object to be moved and rotated by other scripts either in relative mode so its items follow it. Or before rezzing. However if you wish to use this via the menu, the option is there.  

@@ -1,8 +1,0 @@
-Safety Features - Copy Permission Checks
-=============================
-
-Each time you drop a Covey Rez Pro Item script into a prim it will check that prim for copy permissions. If you do not have copy permissions on that object it will warn you and refuse to record. 
-
-This is not full proof as there are certain situations the script does not accurately detect. It will detect direct permissions on the object. It will also detect direct permissions on any object in the items inventory. However it may miss anything which goes deeper than this. So you still need to be careful regarding not rezzing no-copy items from a rez box. If you do, you really should finalise it afterwards. If you tell it to de-rez the item will be lost.
-
-This is a feature which will be expanded on in a future release.  

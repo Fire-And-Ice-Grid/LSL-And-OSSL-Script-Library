@@ -1,6 +1,0 @@
-How To Use: Very lagged, over loaded or slow regions. 
-=====================================
-
-If your region is suffering from heavy lag, general issues, an over loaded server etc then you may find rezzing items becomes problematic. The script resources of the sim may simply run out if a substantial proportion of them are in use before you begin. 
-
-If you do experience a situation like this i suggest you follow the making a Rez Set instructions, make a rez set the contains every item in the rez system. Then instead of using "RezAll", rez the set. When doing this it reads the notecard line by line before passing an instruction to rez to the Rezzer script. That extra action adds in a delay which will very often help in regions which are already struggling for resources.  
